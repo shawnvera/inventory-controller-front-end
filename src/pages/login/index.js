@@ -20,9 +20,9 @@ function Page() {
             .login(email, password, username)
             .then(async (resp) => {
                 console.log(resp)
-                let data = jwtDecode(resp.access)
+                let data = jwtDecode(resp?.access)
                 await dispatch({
-                    currentUserToken: resp.access,
+                    currentUserToken: resp?.access,
                     currentUser: data
                 })
                 router.push('/dashboard')
