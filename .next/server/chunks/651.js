@@ -104,7 +104,7 @@ __webpack_async_result__();
 /* harmony export */   T5: () => (/* binding */ API_URL),
 /* harmony export */   bc: () => (/* binding */ REGISTER_ENDPOINT)
 /* harmony export */ });
-const API_URL = "http://127.0.0.1:8000/";
+const API_URL = "https://capstone-inventory-controller.ue.r.appspot.com/";
 const LOGIN_ENDPOINT = "user/login/";
 const REGISTER_ENDPOINT = "user/signup/";
 const REFRESH_ENDPOINT = "token/refresh/";
