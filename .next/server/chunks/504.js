@@ -40,9 +40,9 @@ function Page() {
         e.preventDefault();
         _services_auth_service__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z.login(email, password, username).then(async (resp)=>{
             console.log(resp);
-            let data = jwt_decode__WEBPACK_IMPORTED_MODULE_5___default()(resp.access);
+            let data = jwt_decode__WEBPACK_IMPORTED_MODULE_5___default()(resp?.access);
             await dispatch({
-                currentUserToken: resp.access,
+                currentUserToken: resp?.access,
                 currentUser: data
             });
             router.push("/dashboard");
