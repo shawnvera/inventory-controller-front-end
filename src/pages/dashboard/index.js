@@ -1,6 +1,7 @@
 import Navbar from '../../components/Navbar';
 import Header from '../../components/Header'
 import CustomerList from '../../components/CustomerList';
+import AddProduct from '../add_product';
 
 export default function Page() {
   return (
@@ -9,6 +10,7 @@ export default function Page() {
     <div className="row text-center">
       <div className="col-md-3"></div>
     <div className="col-md-6">
+      <AddProduct />
     <Header />
     <Navbar />
     <CustomerList />
