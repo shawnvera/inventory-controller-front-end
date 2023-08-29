@@ -1,0 +1,1 @@
+# inventory-controller-front-end
